@@ -1,1 +1,15 @@
 // Mixins in here
+.center {
+    margin: auto auto;
+    text-align: center;
+}
+
+.custom-button(@color, @fcolor, @wide, @size) {
+    max-width: @wide;
+    background-color: @color;
+    font-size: @size;
+    color: @fcolor;
+    border-radius: 10px;
+    padding: 15px 50px;
+    .center();
+}
