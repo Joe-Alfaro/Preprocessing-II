@@ -1,1 +1,24 @@
 // Navigation Styles here
+
+.nav-bar-container {
+    border-bottom: dashed 3px @silver;
+    .nav-bar {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 90px;
+        max-width: 800px;
+
+        nav {
+            width: 45%;
+            display: flex;
+            justify-content: space-around;
+            a {
+                color: @shark;
+                font-size: 1.6rem;
+                text-decoration: none;
+            }
+        }
+    }
+}
